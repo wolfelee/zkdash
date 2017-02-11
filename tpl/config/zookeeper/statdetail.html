@@ -1,6 +1,6 @@
 <div class="bjui-pageContent">
   <ul class="list-group">
-    {% for host, stat in cluster_info.iteritems() %}
+    {% for host, stat in cluster_info.items() %}
       <li class="list-group-item" id="zk_stat">
         <label>{{ host }}</label>
         <pre>{{ stat }}</pre>

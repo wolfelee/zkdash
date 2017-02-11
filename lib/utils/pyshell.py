@@ -68,9 +68,9 @@ def shell(command, timeout=0, capture=False, debug=False):
         返回ShellResult对象
     '''
     if debug:
-        print '=' * 35
-        print '[local] ' + command
-        print '=' * 35
+        print('=' * 35)
+        print('[local]' + command)
+        print('=' * 35)
     if capture:
         process = subprocess.Popen(command, stdin=subprocess.PIPE,
                                    stderr=subprocess.PIPE,

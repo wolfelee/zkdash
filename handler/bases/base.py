@@ -91,8 +91,8 @@ class RestHandler(BaseHandler):
                 val = self.get_argument(args_map.argument, args_map.default)
                 if val == '':
                     val = args_map.default
-                if isinstance(val, unicode):
-                    val = val.encode('utf8')
+                #if isinstance(val, unicode):
+                #val = val.encode('utf8')
                 if isinstance(args_map.default, int):
                     val = toint(val)
                 if isinstance(args_map.default, float):

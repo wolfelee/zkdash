@@ -11,7 +11,7 @@ All rights reserved.
 '''
 import peewee
 import xlwt
-from StringIO import StringIO
+from io import StringIO
 from collections import defaultdict
 import datetime
 from peewee import Model

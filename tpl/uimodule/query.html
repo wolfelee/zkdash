@@ -8,7 +8,7 @@ Args:
 -->
 <select name="column" data-toggle="selectpicker">
   <option value="{{ default_column }}">{{ column.get(default_column) }}</option>
-  {% for k, v in column.iteritems() %}
+  {% for k, v in column.items() %}
     {% if k != default_column %}
     <option value="{{ k }}">{{ v }}</option>
     {% end %}
@@ -16,7 +16,7 @@ Args:
 </select>&nbsp;
 <select name="operator" data-toggle="selectpicker">
   <option value="{{ default_operator }}">{{ operator.get(default_operator) }}</option>
-  {% for k, v in operator.iteritems() %}
+  {% for k, v in operator.items() %}
     {% if k != default_operator %}
     <option value="{{ k }}"> {{ v }}</option>
     {% end %}

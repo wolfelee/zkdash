@@ -102,7 +102,7 @@ def get_stat(host):
             connection_retry={"max_tries": 1, "backoff": 1}
         )
         zoo_client.start(timeout=3)
-        cluster_info[host] = zoo_client.command("mntr")
+        cluster_info[host] = zoo_client.command(str("mntr").encode())
     except KazooTimeoutError as exc:
         log.error('Failed to connnect zookeeper, %s', str(exc))
         cluster_info[host] = str(exc)

@@ -25,7 +25,7 @@ from model.db.zd_qconf_agent import ZdQconfAgent
 from model.db.zd_zookeeper import ZdZookeeper
 from service import zookeeper as ZookeeperService
 from conf import log
-
+from functools import reduce
 
 @route(r'/config/agent/index', '查看')
 class ZdQconfAgentIndexHandler(CommonBaseHandler):

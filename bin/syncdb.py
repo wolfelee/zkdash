@@ -32,10 +32,10 @@ def sync_db():
     models = find_subclasses(ZKDASH_DB.Model)
     for mod in models:
         if mod.table_exists():
-            print "table exists: %s, drop it!" % mod._meta.db_table
+            print("table exists: %s, drop it!" % mod._meta.db_table)
             mod.drop_table()
         mod.create_table()
-        print "created table: %s" % mod._meta.db_table
+        print("created table: %s" % mod._meta.db_table)
 
 
 if __name__ == '__main__':
