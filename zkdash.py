@@ -41,7 +41,7 @@ class Application(tornado.web.Application):
             'site_title': 'zkdash',
             'ui_modules': uimodule,
             'ui_methods': uimethods,
-            'debug': OPTIONS.debug,
+            'debug': False,
         }
         tornado.web.Application.__init__(self, routes, **settings)
 

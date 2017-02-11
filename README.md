@@ -17,7 +17,7 @@ zkdash是一个zookeeper的管理界面，也可以作为任何基于zookeeper�
 
  - 安装并运行mysql
  
- - 安装python2.7, 版本最好 >= 2.7.6
+ - 安装python3.5.2
 
  - 下载zkdash
  
@@ -89,5 +89,3 @@ zkdash是一个zookeeper的管理界面，也可以作为任何基于zookeeper�
  2. 当设置使用QConf获取zookeeper数据时，zookeeper管理菜单下的zookeeper集群名称需要与QConf
     客户端Agent配置文件的idc名称一致
 
-### 技术交流
- 1. QQ群：329474804  申请备注请说明zkdash技术交流
