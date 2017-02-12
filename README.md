@@ -22,7 +22,7 @@ zkdash是一个zookeeper的管理界面，也可以作为任何基于zookeeper�
  - 下载zkdash
  
        ```
-       git clone https://github.com/ireaderlab/zkdash.git
+       git clone https://github.com/wolfelee/zkdash.git
        ```
 
  - 安装依赖项
